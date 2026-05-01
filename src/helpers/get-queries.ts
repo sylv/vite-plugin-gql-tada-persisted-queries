@@ -14,7 +14,9 @@ export function* getQueries(code: string): Generator<Query> {
   for (const match of code.matchAll(QUERY_PATTERN)) {
     const source = match.groups!.source!;
     const name = match.groups!.name!;
-    const frags = match.groups?.frags?.split(",").map((frag) => frag.trim());
+    const frags = match.groups?.frags?.split(",")
+      .map((frag) => frag.trim())
+      .filter((frag) => frag.length > 0); // a empty fragment will be detected if there's a trailing comma, filtering it out
 
     yield {
       index: [match.index, match.index + match[0].length],
