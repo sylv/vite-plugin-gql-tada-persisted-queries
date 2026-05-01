@@ -1,8 +1,11 @@
 {
-    "extends": "@atlasbot/configs/tsconfig",
-    "include": ["src"],
-    "compilerOptions": {
-      "outDir": "dist",
-      "baseUrl": "."
-    }
+  "extends": "@atlasbot/configs/tsconfig",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "ignoreDeprecations": "6.0"
   }
+}

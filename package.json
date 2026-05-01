@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-gql-tada-persisted-queries",
-  "version": "0.0.9",
-  "license": "AGPL-3.0-only",
+  "version": "0.1.0",
+  "license": "MIT",
   "author": "Ryan <ryan@sylver.me>",
   "keywords": [
     "gql.tada",
@@ -28,17 +28,17 @@
     "prepublish": "pnpm run build"
   },
   "devDependencies": {
-    "@apollo/client": "^3.11.8",
+    "@apollo/client": "^4.1.9",
     "@atlasbot/configs": "^10.6.3",
-    "@biomejs/biome": "^1.9.2",
+    "@biomejs/biome": "^1.9.4",
     "@graphql-tools/documents": "^1.0.1",
-    "@types/node": "20",
-    "@urql/introspection": "^1.1.0",
-    "graphql": "^16.9.0",
-    "hash-object": "^5.0.1",
-    "magic-string": "^0.30.11",
-    "tsup": "^8.3.0",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.6"
+    "@types/node": "^25.6.0",
+    "@urql/introspection": "^1.2.1",
+    "graphql": "^16.13.2",
+    "hash-object": "^5.1.0",
+    "magic-string": "^0.30.21",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10"
   }
 }
