@@ -1,11 +1,11 @@
 # vite-plugin-gql-tada-persisted-queries
 
-this plugin automatically handles [gql.tada's persisted queries](https://gql-tada.0no.co/guides/persisted-documents) for you, without having to use `graphql.persisted()` manually. 
+this plugin automatically handles [gql.tada's persisted queries](https://gql-tada.0no.co/guides/persisted-documents) for you, without having to use `graphql.persisted()` manually.
 
 - converts all `graphql()` calls into `graphql.persisted()` calls
 - optionally removes the source code, leaving only the persisted query hash
 - merges new query hashes into an existing persisted queries file
-- writes introspected schema and/or `possibleTypes` 
+- writes introspected schema and/or `possibleTypes`
 
 essentially, it converts this:
 ```ts
@@ -53,7 +53,7 @@ export default defineConfig({
     plugins: [
         persistedQueries({
             outputPath: 'queries.json',
-            adddTypename: true, // optional, whether to add __typename to queries
+            addTypename: true, // optional, whether to add __typename to queries
             enabled: true, // optional, === false disables the plugin
             removeSource: true, // optional, removes the source of the query. may break some client libraries
         })
